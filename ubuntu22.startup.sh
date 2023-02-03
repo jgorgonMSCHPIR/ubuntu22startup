@@ -13,7 +13,7 @@
 
 # CHANGELOG:
 # v1.1:
-#   - Changed apt to nala
+#   - Changed apt to nala and added reboot option
 # v1.0:
 #   - Initial script
 
@@ -27,3 +27,14 @@ sudo apt install nala -y
 
 # Install cmatrix, neofetch, unzip, unrar
 sudo nala install cmatrix neofetch unzip unrar -y
+
+# Reboot
+echo "Reboot now? y/n"
+read rebootchoice
+if [$rebootchoice -eq "y" || $rebootchoice -eq "Y" ];
+then
+sudo reboot now
+else
+echo "Please remember to reboot your machine!"
+echo -n "Exiting now!"
+fi
