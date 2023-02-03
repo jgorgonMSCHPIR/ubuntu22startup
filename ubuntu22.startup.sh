@@ -20,7 +20,7 @@
 ###################################################
 
 # update and upgrade system
-sudo apt update $ apt upgrade -y
+sudo apt update $$ apt upgrade -y
 
 # install nala over apt
 sudo apt install nala -y
@@ -31,7 +31,7 @@ sudo nala install cmatrix neofetch unzip unrar -y
 # Reboot
 echo "Reboot now? y/n"
 read rebootchoice
-if [$rebootchoice -eq "y" || $rebootchoice -eq "Y" ];
+if ["$rebootchoice" -eq "y" || "$rebootchoice" -eq "Y" ];
 then
 sudo reboot now
 else
