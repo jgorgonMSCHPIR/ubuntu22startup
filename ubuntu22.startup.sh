@@ -31,7 +31,7 @@ sudo nala install cmatrix neofetch unzip unrar -y
 # Reboot
 echo "Reboot now? y/n"
 read rebootchoice
-if [ "$rebootchoice" -eq "y" ] || [ "$rebootchoice" -eq "Y" ];
+if [ "$rebootchoice" =="y" ] || [ "$rebootchoice" == "Y" ]
 then
 sudo reboot now
 else
