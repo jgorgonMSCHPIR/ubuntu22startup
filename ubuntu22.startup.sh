@@ -8,10 +8,12 @@
 ########### Jakub Gorgoń ###########
 ############# MSCHPiR ##############
 ######### jgorgon@wschp.pl #########
-############### v1.0 ###############
+############### v1.1 ###############
 ####################################
 
 # CHANGELOG:
+# v1.1:
+#   - Changed apt to nala
 # v1.0:
 #   - Initial script
 
@@ -20,5 +22,8 @@
 # update and upgrade system
 sudo apt update $ apt upgrade -y
 
+# install nala over apt
+sudo apt install nala -y
+
 # Install cmatrix, neofetch, unzip, unrar
-sudo apt install cmatrix neofetch unzip unrar -y
+sudo nala install cmatrix neofetch unzip unrar -y
